@@ -1,0 +1,12 @@
+{
+  "id": "unknown-stack",
+  "name": "Do not invent stack checks",
+  "category": "harness",
+  "kind": "stack-detection",
+  "objective": "A directory containing only a README is reported as unknown",
+  "input": {"files": {"README.md": "A generic project with no manifests."}},
+  "expected_project_type": "unknown",
+  "expected_stacks": ["unknown"],
+  "expected_status": "passed",
+  "limitations": "Only the supplied fixture is evaluated; this does not validate every possible repository structure."
+}

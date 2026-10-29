@@ -1,0 +1,12 @@
+{
+  "id": "flutter-provider-positive",
+  "name": "Preserve Provider architecture",
+  "category": "architecture",
+  "kind": "architecture-rules",
+  "objective": "A repository-local boundary does not flag the current Provider implementation",
+  "input": "lib/features/login/controller.dart",
+  "rules": {"architecture_rules": {"forbidden_imports": [{"files": "lib/features/**", "patterns": ["package:flutter_modular/", "package:flutter_mobx/"]}]}},
+  "fixture_files": {"lib/features/login/controller.dart": "import 'package:provider/provider.dart';\nclass Controller extends ChangeNotifier {}\n"},
+  "expected_status": "passed",
+  "limitations": "Uses rules declared by this fixture only; toolkit does not impose this boundary universally."
+}

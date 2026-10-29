@@ -1,0 +1,11 @@
+{
+  "id": "firebase-admin-boundary",
+  "name": "Flag admin credential in client bundle",
+  "category": "security",
+  "kind": "security",
+  "objective": "A known service account key shape is reported without printing its value",
+  "input": "const privateKey = \"{{PRIVATE_KEY_HEADER}}\";\n",
+  "rules": {"forbidden_patterns": []},
+  "expected_status": "failed",
+  "limitations": "Pattern recognition only; not a Firebase Rules or authorization audit."
+}

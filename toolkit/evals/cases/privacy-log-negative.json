@@ -1,0 +1,11 @@
+{
+  "id": "privacy-log-negative",
+  "name": "Detect sensitive data in logs",
+  "category": "privacy",
+  "kind": "privacy",
+  "objective": "Repository-specific privacy rule flags logging health or government identifiers",
+  "input": "logger.info('cpf=' + request.cpf);\n",
+  "rules": {"forbidden_patterns": ["logger\\.(?:info|debug|warn)\\([^\\n]*(?:cpf|health|medical)"]},
+  "expected_status": "failed",
+  "limitations": "Pattern-based reminder; it does not classify all personal data under LGPD."
+}

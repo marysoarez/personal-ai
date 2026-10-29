@@ -1,0 +1,3 @@
+# Context Engineering
+
+Leia primeiro as instruções aplicáveis e o estado Git. Busque arquivos relacionados, chamadas, testes e contratos; não carregue todo repositório. `skills-index` lê metadados sem carregar corpos; `find-skills` seleciona por stack e intenção; `read-skill` e `read-skill-reference` carregam apenas o material escolhido. `get-project-context` limita arquivos e caracteres e omite caminhos identificados como sensíveis. Registre fatos separados de inferências. Use `summarize --objective ...` para criar um resumo retomável e preencha decisões, testes e pendências durante a tarefa. O comando não recupera sozinho histórico ou fatos; o agente deve atualizá-lo. Busca vetorial não faz parte do toolkit atual.

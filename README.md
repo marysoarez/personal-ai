@@ -1,6 +1,12 @@
-# Minhas Skills de IA
+# Minhas Skills de IA e AI Engineering Toolkit
 
-Coleção pessoal de skills para assistentes de IA, organizadas por tipo de trabalho e compatíveis com o formato de skills do Codex.
+Coleção pessoal de skills para assistentes de IA, organizada por tipo de trabalho, junto de um toolkit reutilizável de engenharia de software assistida por IA. As skills continuam independentes e compatíveis com o formato do Codex.
+
+## AI Engineering Toolkit
+
+O diretório [`toolkit/`](toolkit/README.md) fornece regras compartilhadas, adaptadores para Flutter/Dart, React e Node.js, modelos de especificação/revisão, scripts multiplataforma em Python (biblioteca padrão) e avaliações determinísticas. Ele detecta ferramentas a partir dos arquivos do projeto e não instala dependências nem chama serviços externos.
+
+Comece com `python toolkit/scripts/ai_toolkit.py inspect .`; consulte o [guia do toolkit](toolkit/README.md) para instalação, validação e incorporação em outros repositórios.
 
 ## Flutter e arquitetura
 

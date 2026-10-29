@@ -1,0 +1,2 @@
+# Optional server integration only; the offline CLI does not require this package.
+mcp==2.3.0

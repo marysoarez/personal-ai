@@ -1,0 +1,11 @@
+{
+  "id": "react-accessibility-positive",
+  "name": "Labeled interactive control",
+  "category": "architecture",
+  "kind": "architecture",
+  "objective": "A fixture complying with a declared accessible-name rule passes",
+  "input": "<button aria-label=\"Close dialog\"><CloseIcon /></button>\n",
+  "rules": {"forbidden_patterns": ["<button[^>]*>\\s*<svg"]},
+  "expected_status": "passed",
+  "limitations": "Regex fixture does not replace browser/assistive-technology accessibility testing."
+}

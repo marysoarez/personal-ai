@@ -1,0 +1,11 @@
+{
+  "id": "react-accessibility-negative",
+  "name": "Detect unlabeled icon button fixture",
+  "category": "architecture",
+  "kind": "architecture",
+  "objective": "A declared accessible-name rule catches a bare icon control",
+  "input": "<button><svg><path d=\"M0 0\" /></svg></button>\n",
+  "rules": {"forbidden_patterns": ["<button[^>]*>\\s*<svg"]},
+  "expected_status": "failed",
+  "limitations": "Regex fixture does not replace browser/assistive-technology accessibility testing."
+}

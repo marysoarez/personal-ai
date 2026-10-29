@@ -1,0 +1,12 @@
+{
+  "skills_dir": "../personal-ai/skills",
+  "packages": ["apps/*", "services/*", "packages/*"],
+  "architecture_rules": {
+    "forbidden_imports": [
+      {
+        "files": "src/domain/**",
+        "patterns": ["firebase-admin", "express"]
+      }
+    ]
+  }
+}

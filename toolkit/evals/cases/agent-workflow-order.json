@@ -1,0 +1,11 @@
+{
+  "id": "agent-workflow-order",
+  "name": "Verify workflow evidence order",
+  "category": "workflow",
+  "kind": "workflow-order",
+  "objective": "The trace includes discovery, specification, planning, implementation, tests, review and report in order",
+  "input": "workflow trace fixture",
+  "rules": {"required_order": ["discovery", "specification", "planning", "implementation", "tests", "review", "report"], "observed_steps": ["discovery", "specification", "planning", "implementation", "tests", "review", "report"]},
+  "expected_status": "passed",
+  "limitations": "Checks an explicit trace fixture, not an agent's hidden reasoning or actual work quality."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "testing-traceability-positive",
+  "name": "Acceptance criteria linked to tests",
+  "category": "testing",
+  "kind": "testing-traceability",
+  "objective": "Every declared acceptance criterion ID appears in the test evidence fixture",
+  "input": "CA-1 and CA-2",
+  "rules": {"criteria_ids": ["CA-1", "CA-2"], "test_content": "test('CA-1 authorized export'); test('CA-2 empty export');"},
+  "expected_status": "passed",
+  "limitations": "Textual traceability does not establish test quality or actual behavior coverage."
+}

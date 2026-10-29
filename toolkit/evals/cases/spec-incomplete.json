@@ -1,0 +1,10 @@
+{
+  "id": "spec-incomplete",
+  "name": "Reject incomplete feature specification",
+  "category": "specification",
+  "kind": "spec",
+  "objective": "Missing acceptance, scope, tests and safety sections are reported",
+  "input": "# SPEC-1 Feature\n## Problema\nUsers need an export.\n## Objetivo\nExport data.\n",
+  "expected_status": "failed",
+  "limitations": "Checks headings/content and basic testability only; it does not assess requirement contradictions."
+}

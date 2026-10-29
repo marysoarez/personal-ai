@@ -1,0 +1,12 @@
+{
+  "id": "flutter-provider-violation",
+  "name": "Detect unrequested Flutter architecture migration",
+  "category": "architecture",
+  "kind": "architecture-rules",
+  "objective": "The same local boundary flags a Modular import in a Provider feature",
+  "input": "lib/features/login/controller.dart",
+  "rules": {"architecture_rules": {"forbidden_imports": [{"files": "lib/features/**", "patterns": ["package:flutter_modular/", "package:flutter_mobx/"]}]}},
+  "fixture_files": {"lib/features/login/controller.dart": "import 'package:flutter_modular/flutter_modular.dart';\n"},
+  "expected_status": "failed",
+  "limitations": "Requires repository-declared rules; does not infer all architecture migrations."
+}

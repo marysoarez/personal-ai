@@ -1,0 +1,11 @@
+{
+  "id": "testing-traceability-negative",
+  "name": "Detect acceptance criterion without test reference",
+  "category": "testing",
+  "kind": "testing-traceability",
+  "objective": "A missing criterion reference is surfaced",
+  "input": "CA-1 and CA-2",
+  "rules": {"criteria_ids": ["CA-1", "CA-2"], "test_content": "test('CA-1 authorized export');"},
+  "expected_status": "failed",
+  "limitations": "Textual traceability does not establish test quality or actual behavior coverage."
+}

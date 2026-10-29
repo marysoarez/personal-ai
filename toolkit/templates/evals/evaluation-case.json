@@ -1,0 +1,8 @@
+{
+  "id": "spec-missing-acceptance",
+  "objective": "Detectar especificação sem critérios verificáveis",
+  "input": "# SPEC-1 Exemplo\n## Problema\nHá uma dificuldade.\n## Objetivo\nResolver.\n## Critérios de aceitação\nA feature funciona.",
+  "expected": "O validador aponta as seções obrigatórias ausentes; presença de título não significa critério verificável.",
+  "pass_criteria": ["Seções ausentes são reportadas", "Não declara spec válida"],
+  "method": "deterministic"
+}

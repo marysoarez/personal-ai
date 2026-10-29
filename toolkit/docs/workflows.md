@@ -1,0 +1,3 @@
+# Workflows
+
+Use os modos descritos em `instructions/shared/AGENTS.md`: análise, planejamento, implementação, correção, revisão ou refatoração. Para uma feature, combine `feature-development.md` com o template SDD; resolva ambiguidades materiais, confirme contratos/autorização, planeje mudanças pequenas, implemente, conecte critérios a testes e registre resultado. Para Firebase e LGPD, consulte os módulos compartilhados quando aplicáveis. Para correção, reproduza antes. Para revisão, não altere arquivos. Para refatoração, registre verificações de preservação antes de editar. Limite feedback corretivo a três ciclos.

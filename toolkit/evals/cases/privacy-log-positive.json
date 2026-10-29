@@ -1,0 +1,11 @@
+{
+  "id": "privacy-log-positive",
+  "name": "Allow safe event metadata log",
+  "category": "privacy",
+  "kind": "privacy",
+  "objective": "Operational event ID without personal data passes the declared rule",
+  "input": "logger.info('export.completed', {requestId});\n",
+  "rules": {"forbidden_patterns": ["logger\\.(?:info|debug|warn)\\([^\\n]*(?:cpf|health|medical)"]},
+  "expected_status": "passed",
+  "limitations": "Pattern-based reminder; inspect data flow and fields contextually."
+}

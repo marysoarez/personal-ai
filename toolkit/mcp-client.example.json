@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ai-engineering-toolkit": {
+      "command": "python",
+      "args": [
+        "-m",
+        "toolkit.mcp_server",
+        "--allow-root",
+        "/absolute/path/to/personal-ai",
+        "--allow-root",
+        "/absolute/path/to/project"
+      ],
+      "cwd": "/absolute/path/to/personal-ai"
+    }
+  }
+}
