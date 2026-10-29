@@ -1,0 +1,23 @@
+# Operating system
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated artifacts
+node_modules/
+dist/
+build/
+coverage/
+.venv/
+__pycache__/
+.gradle/

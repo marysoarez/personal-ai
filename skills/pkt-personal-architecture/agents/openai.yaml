@@ -1,0 +1,4 @@
+interface:
+  display_name: "PKT Personal Architecture"
+  short_description: "Architecture decisions for PKT Personal"
+  default_prompt: "Use $pkt-personal-architecture to inspect or change architecture in the PKT Personal Flutter app."
